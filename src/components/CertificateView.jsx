@@ -66,12 +66,16 @@ const CertificateView = ({ data, onBack }) => {
             <div className="certificate-title">
           <h1>जन्म प्रमाणपत्र<br />BIRTH CERTIFICATE</h1>
         </div>
-          <p className="statement">
-             (जन्म आणि मृत्यू नोंदणी अधिनियम, 1969 च्या कलम 12/17 आणि महाराष्ट्र जन्म आणि मृत्यू नियम 2000 च्या नियम 8/13 अंतर्गत देण्यात आले आहे)<br />
-            (ISSUED UNDER SECTION 12/17 OF THE REGISTRATION OF BIRTHS AND DEATHS ACT, 1969 AND RULE 8/13 OF THE MAHARASHTRA REGISTRATION OF BIRTHS & DEATHS RULES 2000)
-            प्रमाणित करण्यात येते की खालील माहिती जन्म नोंदवही या मूळ अभिलेखावरून घेण्यात आली आहे जी तहसील / ब्लॉक सिलोड जिल्हा छत्रपती संभाजीनगर राज्य / केंद्रशासित प्रदेश, भारत यांच्या नोंदवहीत उपलब्ध आहे.<br />
-            THIS IS TO CERTIFY THAT THE FOLLOWING INFORMATION HAS BEEN TAKEN FROM THE ORIGINAL RECORD OF BIRTH WHICH IS THE REGISTER FOR GRAMA PANCHAYAT MANDANA OF TAHSIL/BLOCK SILLOD OF DISTRICT CHHATRAPATI SAMBHAJINAGAR OF STATE/UNION TERRITORY OF MAHARASHTRA, INDIA
-          </p>
+         <p className="statement">
+  (जन्म आणि मृत्यू नोंदणी अधिनियम, 1969 च्या कलम 12/17 आणि महाराष्ट्र जन्म आणि मृत्यू नियम 2000 च्या नियम 8/13 अंतर्गत देण्यात आले आहे)
+  <div className="line-gap"></div>
+  (ISSUED UNDER SECTION 12/17 OF THE REGISTRATION OF BIRTHS AND DEATHS ACT, 1969 AND RULE 8/13 OF THE MAHARASHTRA REGISTRATION OF BIRTHS & DEATHS RULES 2000)
+  <div className="line-gap"></div>
+  प्रमाणित करण्यात येते की खालील माहिती जन्म नोंदवही या मूळ अभिलेखावरून घेण्यात आली आहे जी तहसील / ब्लॉक सिलोड जिल्हा छत्रपती संभाजीनगर राज्य / केंद्रशासित प्रदेश, भारत यांच्या नोंदवहीत उपलब्ध आहे.
+  <div className="line-gap"></div>
+  THIS IS TO CERTIFY THAT THE FOLLOWING INFORMATION HAS BEEN TAKEN FROM THE ORIGINAL RECORD OF BIRTH WHICH IS THE REGISTER FOR GRAMA PANCHAYAT MANDANA OF TAHSIL/BLOCK SILLOD OF DISTRICT CHHATRAPATI SAMBHAJINAGAR OF STATE/UNION TERRITORY OF MAHARASHTRA, INDIA
+</p>
+
 
           {/* DETAILS SECTION */}
           <div className="certificate-details two-column">
