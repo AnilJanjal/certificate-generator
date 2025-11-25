@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
+
+.certificate {
+  font-family: 'Noto Sans Devanagari', 'Times New Roman', serif !important;
+}
+
+.certificate-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.certificate-actions {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* -------------------------------
+   MAIN CERTIFICATE CONTAINER
+--------------------------------*/
+.certificate {
+  width: 210mm;
+  min-height: 297mm;
+  background-color: #fff;
+  padding: 14mm;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Times New Roman', serif;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #000;
+  position: relative;
+}
+
+/* ✅ OUTER RED BORDER with ROUNDED CORNERS */
+.certificate::before {
+  content: "";
+  position: absolute;
+  top: 4mm;
+  left: 4mm;
+  right: 4mm;
+  bottom: 4mm;
+  border: 2px solid #c60000; /* deep red outer border */
+  border-radius: 0mm;
+  pointer-events: none;
+}
+
+/* ✅ INNER RED BORDER with ROUNDED CORNERS */
+.certificate::after {
+  content: "";
+  position: absolute;
+  top: 5mm;
+  left: 5mm;
+  right: 5mm;
+  bottom: 5mm;
+  border: 2px solid #c60000;
+  border-radius: 0mm;
+  pointer-events: none;
+}
+
+/* Header */
+.certificate-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: center;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.header-left, .header-right {
+  width: 15%;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.header-left img,
+.header-right img {
+  width: 50px;  /* adjust size */
+  height: auto; /* keep aspect ratio */
+  margin-top: 5px; /* space between text and image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* center below text */
+}
+
+
+.header-center {
+  width: 70%;
+}
+
+.gov-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 5px;
+}
+
+.header-center h2 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-center h3 {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.header-center h4 {
+  font-size: 11px;
+  margin-top: 3px;
+}
+
+/* Title */
+.certificate-title {
+  text-align: center;
+  margin: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.certificate-title h1 {
+  color: green;
+  font-size: 18px;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 10px;
+  line-height: 1.3;
+  margin-top: 5px;
+}
+
+/* Body */
+.statement {
+  text-align: justify;
+  font-size: 11px;
+  margin: 15px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.certificate-details {
+  padding: 10px 0;
+  position: relative;
+  z-index: 2;
+}
+
+.detail-row {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  gap: 5px; /* small gap between label and value */
+}
+.detail-roww {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;/* align label and value vertically */
+  gap: 5px; /* small gap between label and value */
+}
+.detail-label {
+  width: 45%;
+  font-weight: bold;
+  font-size: 11px;
+  padding-right: 10px;
+  align-items: start;
+  text-align: left;
+  white-space: nowrap;  /* keeps label + colon together */
+  flex-shrink: 0;   
+}
+.detail-value {
+  width: 55%;
+  font-size: 10px;
+  min-height: 16px;
+  word-wrap: break-word;
+  text-align: left;
+  align-items: flex-start;
+   white-space: nowrap;  /* keeps label + colon together */
+  flex-shrink: 0;   
+  
+}
+
+.detail-labell {
+  width: 24%;
+  font-weight: bold;
+  font-size: 11px;
+  align-items: start;
+  text-align: left;
+   white-space: nowrap;  /* keeps label + colon together */
+  flex-shrink: 0;   
+}
+
+.detail-valuee {
+  font-size: 11px;
+  word-wrap: normal; /* remove forced wrapping */
+  white-space: normal; 
+  text-align: left;
+  align-items: flex-start;
+  white-space: nowrap;  /* keeps label + colon together */
+  flex-shrink: 0;   
+}
+
+/* .detail-roww {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 10px;
+  align-items: center; 
+  gap: 5px; 
+  flex-wrap: nowrap; 
+}
+
+.detail-label {
+  font-weight: bold;
+  font-size: 11px;
+  white-space: nowrap; 
+}
+
+.detail-valuee {
+  font-size: 10px;
+  white-space: normal;
+  flex: 1; 
+  word-break: break-word; 
+  text-align: left;
+  margin: 0; 
+} */
+
+/* Footer */
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: flex-start;
+  position: relative;
+  z-index: 2;
+}
+
+.qr-section {
+  text-align: center;
+  width: 20%;
+}
+.qr-section canvas {
+  width: 70px !important;  /* ensure canvas itself stays small */
+  height: 70px !important;
+  margin-right: 70px;
+}
+
+.qr-note {
+  font-size: 9px;
+  margin-top: 5px;
+  font-style: italic;
+  white-space: nowrap;  /* keeps label + colon together */
+  flex-shrink: 0;  
+}
+
+.signature-section {
+  text-align: center;
+  width: 50%;
+  font-size: 10px;
+}
+
+
+.signature-image {
+  width: 100px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.registrar-title {
+  margin-top: 5px;
+  font-weight: bold;
+  color: #513A7A;
+}
+
+.footer-tagline {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25px;
+  font-size: 11px;
+  position: relative;
+  z-index: 2;
+  color: #513A7A;
+}
+
+/* Print optimization */
+@media print {
+  body * { visibility: hidden; }
+  .certificate, .certificate * { visibility: visible; }
+  .certificate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: none;
+    width: 100%;
+    height: 100%;
+  }
+  .certificate-actions { display: none; }
+}
+
+
+/* Two-column layout for certificate details */
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.details-left,
+.details-right {
+  width: 50%;
+}
+
+.details-left .detail-row,
+.details-right .detail-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.details-left .detail-label,
+.details-right .detail-label {
+  width: 45%;
+  font-weight: bold;
+  font-size: 11px;
+}
+
+.details-left .detail-value,
+.details-right .detail-value {
+  width: 30%;
+  font-size: 11px;
+  word-wrap: break-word;
+}
+
+
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .certificate, .certificate * {
+    visibility: visible;
+  }
+
+  .certificate {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 210mm;
+    height: 297mm; /* Fixed A4 height */
+    box-shadow: none;
+    transform: scale(0.95); /* Slight scale down to fit content */
+    transform-origin: top left;
+    overflow: hidden; /* Prevents second page overflow */
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .certificate-actions {
+    display: none;
+  }
+}

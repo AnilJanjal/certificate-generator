@@ -1,0 +1,106 @@
+.certificate-form-container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 30px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: "Noto Sans Devanagari", "Roboto", sans-serif;
+  color: #333;
+}
+
+.certificate-form-container h2 {
+  text-align: center;
+  color: #003366;
+  border-bottom: 3px solid #ff9933;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin-bottom: 25px;
+}
+
+.certificate-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.full-width {
+  width: 100%;
+}
+
+label {
+  font-weight: 600;
+  color: #003366;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 0.95rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+  background-color: #fdfdfd;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #003366;
+  outline: none;
+  background-color: #fff;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 70px;
+}
+
+.btn {
+  align-self: center;
+  background: linear-gradient(90deg, #ff9933, #138808);
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #ff6600, #0a6a06);
+}
+
+@media (max-width: 768px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .certificate-form-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}
